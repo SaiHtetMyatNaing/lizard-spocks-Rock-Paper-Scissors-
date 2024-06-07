@@ -5,61 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
     <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
-    <main class="max-w-full grid grid-rows-12  h-[100dvh] grid-cols-12 gap-[-10px] bg-[#1A2749] mx-auto p-3">
+    <main class=" max-w-full grid  grid-rows-12  max-h-screen  grid-cols-12  bg-[#1A2749] mx-auto p-3">
         <!-- Top Header section -->
-        <section class="col-span-8 font-mono row-span-3  col-start-4 border flex justify-between items-center border-slate-300 max-w-2xl max-h-32  rounded-md p-3">
-            <div class="w-28 leading-[20px] text-white text-[1.4rem] uppercase p-3">
+        <section class=" font-mono row-span-3  col-span-full  border flex justify-between items-center max-h-32  rounded-md p-3">
+            <div class="md:w-30 w-[120px] leading-[20px] text-white text-[1.4rem] uppercase p-3">
                 <img 
                 src="../images/logo-bonus.svg" 
                 alt="rock-paper-scissors">
             </div>
-            <div class="bg-white p-3 w-28 h-full flex flex-col items-center rounded-lg">
-                <h1 class="tracking-[3px] text-lg">Score</h1>
-                <span class="text-[2em] text-slate-500">11</span>
+            <div class="bg-white p-2 md:p-3 w-28 md:w-28 w h-full gap-3 flex flex-col items-center rounded-lg">
+                <h1 class="tracking-[3px] text-md md:text-lg">Score</h1>
+                <span class="text-[2em] md:text-[2em] text-slate-500">11</span>
             </div>
         </section>
         
         <!-- Second Part of the body -->
-        <section class="col-span-8 flex max-w-full items-center row-span-6 items-center  h-full tracking-normal grid-cols-12 font-mono text-white col-start-3  p-4  justify-between">
+        <section class=" col-span-full  h-full tracking-normal  font-mono text-white  p-4 ">
 
-            <div class="col-span-2 flex flex-col max-w-full p-2 items-center gap-10 justify-between  h-full  cursor-pointer">
-                <h1 class="text-center text-2xl">The House Picked</h1>
-                <div class="border-[30px] shadow-2xl hover:shadow-blue-500 shadow-y-[-10px] border-blue-300 bg-white rounded-full w-56 h-56">
-                    <img class="mt-5 ml-6 object-contain w-96" src="../images/icon-paper.svg" alt="paper-icon">
+          <div class="flex items-center justify-around  w-full  flex-wrap md:flex-nowrap">
+
+            <div class=" flex flex-col max-w-full p-2 items-center  gap-7 h-full cursor-pointer md:order-1">
+                <h1 class="text-center text-sm md:text-2xl max-w-36  order-last md:order-1">The House Picked</h1>
+                <div class="border-[18px] sm:border-[20px] md:border-[30px] shadow-2xl hover:shadow-blue-500 shadow-y-[-10px] border-blue-300 bg-white rounded-full w-28 h-28 sm:w-32 sm:h-32 md:w-56 md:h-56">
+                    <img class="md:mt-5 md:ml-6 object-contain w-80 mt-3 ml-4 sm:ml-5 sm:mt-4 md:w-96" src="../images/icon-paper.svg" alt="paper-icon">
                 </div>
             </div>
 
-            <div class="col-span-2 flex items-center flex-col  w-[200px]  uppercase  p-3 justify-between  gap-3">
-                <h1 class="text-4xl">You Lose</h1>
-                <button class="text-[#1A2749] bg-white border rounded-md w-full p-3 cursor-pointer">Play Again</button>
+            <div class="flex items-center flex-col  w-full md:w-[200px] order-3 md:order-2  uppercase  p-3 justify-between gap-3">
+                <h1 class="text-xl sm:text-xl md:text-4xl  ">You Lose</h1>
+                <button class="text-[#1A2749] bg-white border rounded-md text-sm w-[8em] sm:w-[9em] md:w-[10em] p-3 cursor-pointer">Play Again</button>
             </div>
 
-            <div class="col-span-2 flex flex-col max-w-full p-2 items-center gap-10 justify-between  h-full  cursor-pointer">
-                <h1 class="text-center text-2xl">The House Picked</h1>
-                <div class="border-[30px] shadow-2xl hover:shadow-blue-500 shadow-y-[-10px] border-blue-300 bg-white rounded-full w-56 h-56">
-                    <img class="mt-5 ml-6 object-contain w-96" src="../images/icon-paper.svg" alt="paper-icon">
+            <div class=" flex flex-col max-w-full p-2 items-center  gap-7 h-full md:order-3 cursor-pointer">
+                <h1 class="text-center text-sm md:text-2xl max-w-36  order-last md:order-1">The House Picked</h1>
+                <div class="border-[18px] sm:border-[20px] md:border-[30px] shadow-2xl hover:shadow-blue-500 shadow-y-[-10px] border-blue-300 bg-white rounded-full w-28 h-28 sm:w-32 sm:h-32 md:w-56 md:h-56">
+                    <img class="md:mt-5 md:ml-6 object-contain w-80 mt-3 ml-4 sm:ml-5 sm:mt-4 md:w-96" src="../images/icon-paper.svg" alt="paper-icon">
                 </div>
             </div>
 
-          
 
         </section>
 
         <!-- Last Section -->
-
-        <section class="grid-cols-full col-span-3 row-span-3 col-start-11 p-3 row-start-11">
-             <button class="border border-white rounded-md p-2 text-white w-32 font-mono">Rules</button>
-        </section>
-
-
-
-
+        <section class="block col-start-10 row-start-11">
+            <button class="border border-white rounded-md p-2 text-white  font-mono">Rules</button>
+       </section>
 
     </main>
+
+ 
 
 
 
